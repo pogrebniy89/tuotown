@@ -1,6 +1,8 @@
 /* Собственно сам слайдер */
 .section-1-bg-slider {
   position: absolute;
+  width: 100%;
+  min-width: 1200px;
   top: 0;
   left: 0;
 
