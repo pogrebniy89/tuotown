@@ -1,3 +1,6 @@
+@import "text_styles";
+@import "color_styles";
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -35,6 +38,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background: $bg;
 }
 
 /* Упрощаем работу с изображениями */
@@ -42,5 +46,11 @@ img {
   max-width: 100%;
   display: block;
 }
-@import "text_styles";
-@import "color_styles";
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@import 'header';
+@import 'section-1';
