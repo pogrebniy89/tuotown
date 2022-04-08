@@ -1,11 +1,9 @@
 /* Собственно сам слайдер */
 .section-1-bg-slider {
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 
-  height: 590px;
   margin: auto;
   /* Картинка мастабируется по отношению к родительскому элементу */
   img {
