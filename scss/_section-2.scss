@@ -1,0 +1,61 @@
+.section-2{
+  //margin-top: 60px;
+}
+
+.wrap-category{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a{
+    display: flex;
+    align-items: end;
+    height: 100px;
+    @include M500(17, 21);
+    text-decoration: none;
+  }
+  .section-2-item-1{
+    background: center 0 url("../img/items-2 (4).svg") no-repeat;
+    &:hover{
+      color: $text-light;
+      background: center 0 url("../img/items-2 (4)h.svg") no-repeat;
+    }
+    &:active{
+      color: $active;
+      background: center 0 url("../img/items-2 (4)r.svg") no-repeat;
+    }
+  }
+  .section-2-item-2{
+    background: center 0 url("../img/items-2 (3).svg") no-repeat;
+    &:hover{
+      color: $text-light;
+      background: center 0 url("../img/items-2 (3)h.svg") no-repeat;
+    }
+    &:active{
+      color: $active;
+      background: center 0 url("../img/items-2 (3)r.svg") no-repeat;
+    }
+  }
+  .section-2-item-3{
+    background: center 0 url("../img/items-2 (2).svg") no-repeat;
+    &:hover{
+      color: $text-light;
+      background: center 0 url("../img/items-2 (2)h.svg") no-repeat;
+    }
+    &:active{
+      color: $active;
+      background: center 0 url("../img/items-2 (2)r.svg") no-repeat;
+    }
+  }
+  .section-2-item-4{
+    background: center 0 url("../img/items-2 (1).svg") no-repeat;
+    &:hover{
+      color: $text-light;
+      background: center 0 url("../img/items-2 (1)h.svg") no-repeat;
+    }
+    &:active{
+      color: $active;
+      background: center 0 url("../img/items-2 (1)r.svg") no-repeat;
+    }
+  }
+}
+

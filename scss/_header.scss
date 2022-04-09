@@ -42,11 +42,9 @@
   margin-left: 35px;
 
   a {
-    @include text-p-medium;
-    font-size: 20px;
+    @include M500(20, 26);
     text-decoration: none;
     color: white;
-    line-height: 26px;
 
     &:hover {
       opacity: 0.3;

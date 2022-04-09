@@ -1,11 +1,10 @@
 /* Собственно сам слайдер */
 .section-1-bg-slider {
-  position: absolute;
+  position: relative;
   width: 100%;
   min-width: 1200px;
-  top: 0;
+  top: -71px;
   left: 0;
-
   margin: auto;
   /* Картинка мастабируется по отношению к родительскому элементу */
   img {
@@ -15,7 +14,6 @@
   }
 
   /* Анимация слайдов */
-
   .item {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -57,14 +55,43 @@
 /* Заголовок слайда */
 .slideText {
   position: absolute;
-  color: #fff;
-  font-size: 35px;
-  /* Выравнивание текста по горизонтали и по вертикали*/
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* Тень*/
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+
+  h2 {
+    margin-top: 149px;
+    @include J400(41,48);
+  }
+
+  p {
+    margin-top: 24px;
+    @include M400(19, 23);
+  }
+
+  button {
+    margin-top: 39px;
+  }
+
+  .button-styles {
+    width: 165px;
+    height: 55px;
+    border: 2px solid $active;
+    border-radius: 27px;
+    @include M600(14, 23);
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: 3px solid $active;
+    }
+
+    &:active {
+      background: $active;
+    }
+
+  }
 }
 
 /* Кружочки */

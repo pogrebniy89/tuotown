@@ -80,14 +80,11 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height */
-    color: #000000;
-    font-size: 20px;
+    font-size: 20 px;
+    line-height: 26 px;
+    color: #FFFFFF;
     text-decoration: none;
-    color: white;
-    line-height: 26px; }
+    color: white; }
     .phone a:hover {
       opacity: 0.3; }
 
@@ -110,10 +107,10 @@ img {
 
 /* Собственно сам слайдер */
 .section-1-bg-slider {
-  position: absolute;
+  position: relative;
   width: 100%;
   min-width: 1200px;
-  top: 0;
+  top: -71px;
   left: 0;
   margin: auto;
   /* Картинка мастабируется по отношению к родительскому элементу */
@@ -152,14 +149,45 @@ img {
 /* Заголовок слайда */
 .slideText {
   position: absolute;
-  color: #fff;
-  font-size: 35px;
-  /* Выравнивание текста по горизонтали и по вертикали*/
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* Тень*/
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000; }
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px; }
+  .slideText h2 {
+    margin-top: 149px;
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41 px;
+    line-height: 48 px;
+    color: #FFFFFF; }
+  .slideText p {
+    margin-top: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19 px;
+    line-height: 23 px;
+    color: #FFFFFF; }
+  .slideText button {
+    margin-top: 39px; }
+  .slideText .button-styles {
+    width: 165px;
+    height: 55px;
+    border: 2px solid #C80000;
+    border-radius: 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14 px;
+    line-height: 23 px;
+    color: #FFFFFF;
+    background: transparent;
+    cursor: pointer; }
+    .slideText .button-styles:hover {
+      border: 3px solid #C80000; }
+    .slideText .button-styles:active {
+      background: #C80000; }
 
 /* Кружочки */
 .slider-dots {
@@ -193,5 +221,52 @@ img {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+.wrap-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .wrap-category a {
+    display: flex;
+    align-items: end;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17 px;
+    line-height: 21 px;
+    color: #FFFFFF;
+    text-decoration: none; }
+  .wrap-category .section-2-item-1 {
+    background: center 0 url("../img/items-2 (4).svg") no-repeat; }
+    .wrap-category .section-2-item-1:hover {
+      color: #ADACAC;
+      background: center 0 url("../img/items-2 (4)h.svg") no-repeat; }
+    .wrap-category .section-2-item-1:active {
+      color: #C80000;
+      background: center 0 url("../img/items-2 (4)r.svg") no-repeat; }
+  .wrap-category .section-2-item-2 {
+    background: center 0 url("../img/items-2 (3).svg") no-repeat; }
+    .wrap-category .section-2-item-2:hover {
+      color: #ADACAC;
+      background: center 0 url("../img/items-2 (3)h.svg") no-repeat; }
+    .wrap-category .section-2-item-2:active {
+      color: #C80000;
+      background: center 0 url("../img/items-2 (3)r.svg") no-repeat; }
+  .wrap-category .section-2-item-3 {
+    background: center 0 url("../img/items-2 (2).svg") no-repeat; }
+    .wrap-category .section-2-item-3:hover {
+      color: #ADACAC;
+      background: center 0 url("../img/items-2 (2)h.svg") no-repeat; }
+    .wrap-category .section-2-item-3:active {
+      color: #C80000;
+      background: center 0 url("../img/items-2 (2)r.svg") no-repeat; }
+  .wrap-category .section-2-item-4 {
+    background: center 0 url("../img/items-2 (1).svg") no-repeat; }
+    .wrap-category .section-2-item-4:hover {
+      color: #ADACAC;
+      background: center 0 url("../img/items-2 (1)h.svg") no-repeat; }
+    .wrap-category .section-2-item-4:active {
+      color: #C80000;
+      background: center 0 url("../img/items-2 (1)r.svg") no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
