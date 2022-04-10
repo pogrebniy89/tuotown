@@ -383,4 +383,67 @@ img {
     color: #FFFFFF;
     margin-left: 18px; }
 
+.section-4 {
+  margin-top: 49px; }
+
+.wrap-section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wrap-section-4 span {
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 17px; }
+
+.send-email-4 {
+  position: relative; }
+
+#email-s-4 {
+  width: 276px;
+  height: 59px;
+  background: #272727;
+  border: 2px solid #272727;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  padding-left: 26px;
+  padding-right: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF; }
+  #email-s-4::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.5; }
+  #email-s-4:focus {
+    border: 2px solid #232323; }
+
+#submit-s-4 {
+  background: center/30% url(../img/right.svg) no-repeat;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  right: 7px;
+  padding-right: 30px; }
+  #submit-s-4:hover {
+    background: center/30% url(../img/right_g.svg) no-repeat; }
+  #submit-s-4:active {
+    background: center/30% url(../img/right_r.svg) no-repeat; }
+
 /*# sourceMappingURL=style.css.map */

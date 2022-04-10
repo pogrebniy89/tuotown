@@ -1,0 +1,60 @@
+.section-4 {
+  margin-top: 49px;
+}
+
+.wrap-section-4 {
+  //width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    @include J500(27, 42);
+    margin-bottom: 17px;
+  }
+}
+
+.send-email-4{
+  position: relative;
+}
+
+#email-s-4 {
+  width: 276px;
+  height: 59px;
+  background: $bg-price-card;
+  border: 2px solid $bg-price-card;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  padding-left: 26px;
+  padding-right: 45px;
+  @include M400(15, 18);
+  &::placeholder {
+    @include M400(15, 18);
+    opacity: 0.5;
+  }
+  &:focus{
+    border: 2px solid $dark;
+  }
+}
+
+#submit-s-4 {
+  background: center/30% url(../img/right.svg) no-repeat;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  right: 7px;
+  padding-right: 30px;
+  &:hover{
+    background: center/30% url(../img/right_g.svg) no-repeat;
+  }
+  &:active{
+    background: center/30% url(../img/right_r.svg) no-repeat;
+  }
+}
+
