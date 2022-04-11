@@ -1,0 +1,20 @@
+.wrap-section-5{
+  margin-top: 60px;
+}
+
+.wrap-link-s-5{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 44px;
+  a{
+    text-decoration: none;
+    margin: 0 27px;
+    @include M600(17, 42);
+    opacity: 0.5;
+    &:hover{
+      opacity: 1;
+      border-bottom: 2px solid $active;
+    }
+  }
+}

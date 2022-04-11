@@ -468,4 +468,26 @@ img {
   border: 1px solid #FFFFFF;
   margin-top: 60px; }
 
+.wrap-section-5 {
+  margin-top: 60px; }
+
+.wrap-link-s-5 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 44px; }
+  .wrap-link-s-5 a {
+    text-decoration: none;
+    margin: 0 27px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 42px;
+    color: #FFFFFF;
+    opacity: 0.5; }
+    .wrap-link-s-5 a:hover {
+      opacity: 1;
+      border-bottom: 2px solid #C80000; }
+
 /*# sourceMappingURL=style.css.map */
