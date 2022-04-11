@@ -44,3 +44,11 @@
   line-height: $s2+px;
   color: #FFFFFF;
 }
+@mixin J600($s, $s2) {
+  font-family: 'Jura', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $s+px;
+  line-height: $s2+px;
+  color: #FFFFFF;
+}

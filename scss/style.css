@@ -490,4 +490,57 @@ img {
       opacity: 1;
       border-bottom: 2px solid #C80000; }
 
+.wrap-section-6 {
+  margin-top: 60px; }
+
+.row-1-s6 {
+  display: flex;
+  flex-direction: row; }
+  .row-1-s6 .wrap-img-s6 {
+    width: 300px;
+    height: 289px;
+    flex-shrink: 0; }
+
+.wrap-text-s6 {
+  margin-left: 81px; }
+  .wrap-text-s6 h3 {
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF; }
+  .wrap-text-s6 .text-s62 {
+    margin-top: 51px;
+    width: 672px; }
+
+.row-2-s6 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 39px; }
+  .row-2-s6 .wrap-img-s62 {
+    flex-shrink: 0;
+    width: 300px;
+    height: 362px;
+    margin-left: 80px; }
+
+.text-size-s6 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF; }
+
+.wrap-text-s62 h4 {
+  font-family: 'Jura', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-top: 43px; }
+.wrap-text-s62 p:nth-child(2) {
+  margin-top: 27px; }
+
 /*# sourceMappingURL=style.css.map */
