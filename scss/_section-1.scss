@@ -20,6 +20,9 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
+  @media (max-width: 768px) {
+    min-width: 630px;
+  }
 }
 
 .wrap-button {
@@ -29,8 +32,10 @@
   display: flex;
   margin-top: 481px;
   justify-content: space-between;
-
-  /* Кнопки вперед и назад */
+  @media (max-width: 768px) {
+    width: 630px;
+  }
+    /* Кнопки вперед и назад */
   .prev, .next {
     cursor: pointer;
     transition: 0.6s ease;
@@ -39,6 +44,7 @@
     &:hover {
       opacity: 0.3;
     }
+
   }
 
   .next {
@@ -59,19 +65,37 @@
   display: flex;
   flex-direction: column;
   margin-left: 69px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 
   h2 {
+    width: 530px;
     margin-top: 149px;
     @include J400(41,48);
+    @media (max-width: 768px) {
+      @include J500(24,28);
+      margin-top: 131px;
+      width: 630px;
+    }
   }
 
   p {
+    width: 400px;
     margin-top: 24px;
     @include M400(19, 23);
+    @media (max-width: 768px) {
+      @include J400(16,19);
+      margin-top: 20px;
+      width: 415px;
+    }
   }
 
   button {
     margin-top: 39px;
+    @media (max-width: 768px) {
+      margin-top: 27px;
+    }
   }
 
   .button-styles {
@@ -82,6 +106,9 @@
     @include M600(14, 23);
     background: transparent;
     cursor: pointer;
+    @media (max-width: 768px) {
+      height: 49px;
+    }
 
     &:hover {
       border: 3px solid $active;

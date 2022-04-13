@@ -8,6 +8,10 @@
   grid-template-columns: repeat(auto-fill, 286px);
   grid-gap: 25px 18px;
   position: relative;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 30px 30px;
+  }
 
   li {
     list-style: none;
@@ -16,6 +20,10 @@
 
     &:first-child {
       grid-area: 1/1/1/3;
+    }
+
+    @media (max-width: 768px) {
+      height: 514px;
     }
   }
 
@@ -27,6 +35,9 @@
 .section-3-item-1 {
   background: center / contain url("../img/Rectangle 33.png") no-repeat;
   height: 481px;
+  @media (max-width: 768px) {
+    height: 514px;
+  }
 
   .wrap-text-s-3 {
     display: inline-block;
@@ -42,6 +53,9 @@
 
   span {
     @include M600(17, 28);
+    @media (max-width: 768px) {
+      @include M600(16, 28);
+    }
   }
 }
 
@@ -109,6 +123,7 @@
   position: absolute;
   left: 107px;
   top: 37px;
+
   img {
     display: inline-block;
   }

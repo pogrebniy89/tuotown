@@ -7,6 +7,15 @@
   position: sticky;
   top: 0;
   z-index: 5;
+  .container{
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 768px;
+  }
 }
 
 .wrap-header {
@@ -22,8 +31,12 @@
   width: 23px;
   height: 23px;
   cursor: pointer;
+
   &:hover {
     opacity: 0.3;
+  }
+  @media (max-width: 768px) {
+    margin-left: 15px;
   }
 }
 
@@ -35,6 +48,9 @@
       opacity: 0.3;
     }
   }
+  @media (max-width: 768px) {
+    margin-left: 31px;
+  }
 }
 
 .phone {
@@ -43,11 +59,13 @@
   a {
     @include M500(20, 26);
     text-decoration: none;
-    color: white;
 
     &:hover {
       opacity: 0.3;
     }
+  }
+  @media (max-width: 768px) {
+    margin-left: 34px;
   }
 }
 
@@ -72,6 +90,9 @@
       opacity: 0.3;
     }
   }
+  @media (max-width: 768px) {
+    margin-left: 30px;
+  }
 }
 
 .search {
@@ -81,5 +102,9 @@
     &:hover {
       opacity: 0.3;
     }
+  }
+  @media (max-width: 768px) {
+    margin-left: 30px;
+    margin-right: 15px;
   }
 }

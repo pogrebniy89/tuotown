@@ -65,7 +65,10 @@
   grid-template-columns: repeat(auto-fill, 286px);
   grid-gap: 25px 18px;
   position: relative;
-
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 25px 30px;
+  }
   li {
     list-style: none;
     height: 481px;
