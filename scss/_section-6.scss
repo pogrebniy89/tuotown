@@ -5,11 +5,16 @@
 .row-1-s6 {
   display: flex;
   flex-direction: row;
-
+  @media (max-width: 320px) {
+    flex-direction: column;
+  }
   .wrap-img-s6 {
     width: 300px;
     height: 289px;
     flex-shrink: 0;
+    @media (max-width: 320px) {
+      width: 290px;
+    }
   }
 }
 
@@ -18,7 +23,9 @@
   @media (max-width: 768px) {
     margin-left: 30px;
   }
-
+  @media (max-width: 320px) {
+    margin-left: 0;
+  }
   h3 {
     @include J500(35, 42);
     @media (max-width: 768px) {
@@ -39,11 +46,18 @@
   display: flex;
   flex-direction: row;
   margin-top: 39px;
+  @media (max-width: 320px) {
+    flex-direction: column;
+  }
   .wrap-img-s62 {
     flex-shrink: 0;
     width: 300px;
     height: 362px;
     margin-left: 80px;
+    @media (max-width: 320px) {
+      width: 290px;
+      margin-left: 0;
+    }
   }
 }
 

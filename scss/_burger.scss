@@ -7,6 +7,11 @@
   height: 100%;
   width: 478px;
   transition: .8s;
+  @media (max-width: 320px) {
+    overflow: auto;
+    left: -320px;
+    width: 320px;
+  }
 }
 
 #burgerMenu {
@@ -15,6 +20,9 @@
   &:checked ~ .burger {
     transition: .8s;
     transform: translateX(478px);
+    @media (max-width: 320px) {
+      transform: translateX(320px);
+    }
   }
 
   &:checked ~ .how_burger {
@@ -33,17 +41,26 @@
   width: 478px;
   height: 74px;
   cursor: pointer;
+  @media (max-width: 320px) {
+    width: 320px;
+  }
 }
 
 .text-menu-burger {
   margin-top: 41px !important;
   margin-left: 48px !important;
   margin-right: 48px !important;
-
+  @media (max-width: 320px) {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
   li {
     width: 100%;
     height: 50px;
     list-style: none;
+    @media (max-width: 320px) {
+      height: 40px;
+    }
   }
 
   a {
@@ -52,6 +69,9 @@
     height: 100%;
     display: block;
     @include M500(18, 22);
+    @media (max-width: 320px) {
+      @include M500(16, 19);
+    }
 
     &:hover {
       color: $text-light;
@@ -66,11 +86,18 @@
 .text-company-burger{
   margin-top: 53px !important;
   margin-left: 48px !important;
+  @media (max-width: 320px) {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
 
   li {
     width: 100%;
     height: 50px;
     list-style: none;
+    @media (max-width: 320px) {
+      height: 40px;
+    }
   }
 
   a {
