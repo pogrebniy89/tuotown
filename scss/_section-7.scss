@@ -14,13 +14,29 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 380px);
   grid-gap: 28px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 630px);
+    grid-gap: 30px;
+  }
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(auto-fill, 290px);
+    grid-gap: 30px;
+  }
 
+  img{
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
   li {
     list-style: none;
     height: 465px;
     border-radius: 14px;
 
     position: relative;
+    @media (max-width: 768px) {
+      overflow: hidden;
+    }
 
     a {
       text-decoration: none;
@@ -38,7 +54,8 @@
         opacity: 0.6;
       }
     }
-    &:hover .text-style-72{
+
+    &:hover .text-style-72 {
       background: $active;
       border-bottom-left-radius: 14px;
       border-bottom-right-radius: 14px;
@@ -63,4 +80,17 @@
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 13px;
+  @media (max-width: 768px) {
+    width: 630px;
+    height: 78px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+  }
+  @media (max-width: 320px) {
+    width: 290px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
 }

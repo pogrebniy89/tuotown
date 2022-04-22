@@ -37,6 +37,9 @@
   &:focus{
     border: 2px solid $dark;
   }
+  @media (max-width: 320px) {
+    width: 290px;
+  }
 }
 
 #submit-s-4 {
@@ -65,7 +68,14 @@
   grid-template-columns: repeat(auto-fill, 286px);
   grid-gap: 25px 18px;
   position: relative;
-
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 25px 30px;
+  }
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(auto-fill, 290px);
+    grid-gap: 30px 30px;
+  }
   li {
     list-style: none;
     height: 481px;
@@ -83,4 +93,7 @@
   opacity: 0.1;
   border: 1px solid $line;
   margin-top: 60px;
+  @media (max-width: 320px) {
+    margin-top: 30px;
+  }
 }

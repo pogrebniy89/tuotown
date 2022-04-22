@@ -20,6 +20,13 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
+  @media (max-width: 768px) {
+    min-width: 630px;
+  }
+  @media (max-width: 320px) {
+    display: none;
+  }
 }
 
 .wrap-button {
@@ -29,7 +36,9 @@
   display: flex;
   margin-top: 481px;
   justify-content: space-between;
-
+  @media (max-width: 768px) {
+    width: 630px;
+  }
   /* Кнопки вперед и назад */
   .prev, .next {
     cursor: pointer;
@@ -39,6 +48,7 @@
     &:hover {
       opacity: 0.3;
     }
+
   }
 
   .next {
@@ -59,19 +69,37 @@
   display: flex;
   flex-direction: column;
   margin-left: 69px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 
   h2 {
+    width: 530px;
     margin-top: 149px;
-    @include J400(41,48);
+    @include J400(41, 48);
+    @media (max-width: 768px) {
+      @include J500(24, 28);
+      margin-top: 131px;
+      width: 630px;
+    }
   }
 
   p {
+    width: 400px;
     margin-top: 24px;
     @include M400(19, 23);
+    @media (max-width: 768px) {
+      @include J400(16, 19);
+      margin-top: 20px;
+      width: 415px;
+    }
   }
 
   button {
     margin-top: 39px;
+    @media (max-width: 768px) {
+      margin-top: 27px;
+    }
   }
 
   .button-styles {
@@ -82,6 +110,9 @@
     @include M600(14, 23);
     background: transparent;
     cursor: pointer;
+    @media (max-width: 768px) {
+      height: 49px;
+    }
 
     &:hover {
       border: 3px solid $active;
@@ -123,6 +154,70 @@
     background-color: #FFFFFF;
   }
 }
+
+.bg-320 {
+  display: none;
+  width: 320px;
+  height: 540px;
+  margin-top: -43px;
+  background: black bottom url("../img/bg320.png") no-repeat;
+  &:after{
+    content: '';
+    background: linear-gradient(180deg, #000000 25.76%, rgba(0, 0, 0, 0) 100%);
+    width: 320px;
+    height: 540px;
+    display: block;
+  }
+
+  @media (max-width: 320px) {
+    display: block;
+  }
+}
+.text-bg-320{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  h3{
+    @include J500(24, 28);
+    margin-top: 73px;
+    display: block;
+    width: 200px;
+    margin-left: 15px;
+  }
+  span{
+    @include M400(14, 20);
+    width: 215px;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: block;
+  }
+  .button-320{
+    width: 165px;
+    height: 49px;
+    border: 2px solid $active;
+    box-sizing: border-box;
+    border-radius: 27px;
+    @include M600(14, 17);
+    background: transparent;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 15px;
+
+    &:hover {
+      border: 3px solid $active;
+    }
+
+    &:active {
+      background: $active;
+    }
+
+  }
+  @media (max-width: 320px) {
+    display: block;
+  }
+}
+
 
 
 @-webkit-keyframes fade {

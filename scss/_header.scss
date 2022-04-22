@@ -7,6 +7,25 @@
   position: sticky;
   top: 0;
   z-index: 5;
+
+  .container {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 320px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 750px;
+  }
+  @media (max-width: 320px) {
+    width: 100%;
+    min-width: 320px;
+    height: 43px;
+  }
 }
 
 .wrap-header {
@@ -15,6 +34,9 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  @media (max-width: 320px) {
+    height: 43px;
+  }
 }
 
 .btn_menu {
@@ -22,18 +44,30 @@
   width: 23px;
   height: 23px;
   cursor: pointer;
+
   &:hover {
     opacity: 0.3;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
   }
 }
 
 .map {
   margin-left: 23px;
+  @media (max-width: 320px) {
+    display: none;
+  }
 
   img {
     &:hover {
       opacity: 0.3;
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 31px;
   }
 }
 
@@ -43,8 +77,28 @@
   a {
     @include M500(20, 26);
     text-decoration: none;
-    color: white;
 
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-left: 34px;
+  }
+  @media (max-width: 320px) {
+    display: none;
+  }
+
+}
+
+.phone1 {
+  margin-left: 30px;
+  display: none;
+  @media (max-width: 320px) {
+    display: block;
+  }
+
+  a {
     &:hover {
       opacity: 0.3;
     }
@@ -54,6 +108,14 @@
 .logo {
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 320px) {
+    margin-right: 15px;
+  }
+  img{
+    @media (max-width: 320px) {
+    height: 24px;
+  }
+  }
 }
 
 .shop {
@@ -61,6 +123,21 @@
     &:hover {
       opacity: 0.3;
     }
+  }
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
+.shop1 {
+  display: none;
+  margin-left: 30px;
+  img {
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+  @media (max-width: 320px) {
+    display: block;
   }
 }
 
@@ -72,6 +149,13 @@
       opacity: 0.3;
     }
   }
+
+  @media (max-width: 768px) {
+    margin-left: 30px;
+  }
+  @media (max-width: 320px) {
+    display: none;
+  }
 }
 
 .search {
@@ -81,5 +165,13 @@
     &:hover {
       opacity: 0.3;
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+  @media (max-width: 320px) {
+    display: none;
   }
 }
